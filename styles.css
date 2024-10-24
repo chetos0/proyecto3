@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d9e8d5; 
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h2 {
+    color: #fff;
+    background-color: #72b048;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #033500;
+}
+
+
+.box {
+    background-color: #b3d8a5; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #72b048; 
+}
+
+
+#tablaPuntos {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #e2f0d9; 
+    border: 2px solid #72b048; 
+    padding: 10px;
+}
+
+#tablaPuntos th {
+    background-color: #72b048;
+    color: white;
+    padding: 10px;
+    border: 2px solid #72b048;
+}
+
+#tablaPuntos td {
+    border: 1px solid #72b048;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.botones button, button {
+    background-color: #72b048;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5a8a39; 
+}
+
+
+#resultado p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+#tablaPasos {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#tablaPasos th, #tablaPasos td {
+    padding: 10px;
+    border: 1px solid #72b048;
+}
+
+#tablaPasos th {
+    background-color: #a5cc89;
+}

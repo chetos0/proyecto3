@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolación de Lagrange</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Interpolación de Lagrange</h2>
+
+        <div class="box" id="puntos">
+            <h4>** Asegurate de poner solo los puntos necesarios,de lo contrario los calculos no seran precisos **</h4>
+            <h3>Ingrese los puntos:</h3>
+            <table id="tablaPuntos">
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                </tr>
+                <tr>
+                    <td><input type="number" step="any" id="x0"></td>
+                    <td><input type="number" step="any" id="y0"></td>
+                </tr>
+            </table>
+            <div class="botones">
+                <button onclick="agregarPunto()">Agregar punto</button>
+                <button onclick="quitarPunto()">Quitar punto</button>
+            </div>
+        </div>
+
+        <h3>Valor de Y a interpolar:</h3>
+        <input type="number" step="any" id="valorY">
+        <button onclick="calcularLagrange()">Calcular</button>
+
+        <div class="box" id="resultado">
+            <h3>Resultado:</h3>
+            <p id="resultado-texto"></p>
+        </div>
+
+        <div class="box" id="pasos-section">
+            <h3>Pasos del cálculo:</h3>
+            <table id="tablaPasos"></table>
+        </div>
+    </div>
+
+    <script src="lagrange.js"></script>
+</body>
+</html>
